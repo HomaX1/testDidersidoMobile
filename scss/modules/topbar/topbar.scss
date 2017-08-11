@@ -1,0 +1,69 @@
+.topbar {
+  width: 100%;
+  position: fixed;
+  background-color: $SMALTBLUE;
+}
+
+.path {
+  text-transform: capitalize;
+  float: left;
+  font-size: 16px;
+  font-weight: 400;
+  color: $WHITE;
+  margin: 35px 0 35px 40px;
+
+  &_weight {
+    font-weight: 700;
+  }
+}
+
+.period {
+  float: right;
+  font-weight: 400;
+  margin: 25px 25px 28px 0;
+
+  &__text {
+    font-size: 16px;
+    color: $WHITE;
+    margin-right: 20px;
+  }
+}
+
+.choose {
+  display: inline-block;
+  background-color: $WHITE;
+  border-radius: 2px;
+  position: relative;
+
+  &__icon {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+}
+
+.choose-select {
+  display: inline;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  color: $TUNDORA;
+  padding: 9px 37px 10px 26px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  cursor: pointer;
+
+  &__item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.clear {
+  clear: both;
+}
