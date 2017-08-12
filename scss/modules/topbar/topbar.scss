@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: $SMALTBLUE;
+  z-index: 2;
 }
 
 .path {
@@ -17,7 +18,7 @@
     font-weight: 400;
     color: $WHITE;
 
-    &_weight {
+    &:first-child {
       font-weight: 700;
     }
   }
