@@ -2,6 +2,7 @@
   width: 100%;
   height: 80px;
   position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,7 +11,7 @@
 }
 
 .path {
-  margin-left: 40px;
+  margin-left: 355px;
 
   &__item {
     text-transform: capitalize;

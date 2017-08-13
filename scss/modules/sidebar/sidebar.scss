@@ -1,0 +1,45 @@
+.sidebar {
+  width: 315px;
+  height: 100%;
+  background-color: $EBONYCLAY;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.logo {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 37px;
+  font-weight: 400;
+  color: $WHITE;
+
+  &__first-letter {
+    text-transform: uppercase;
+    color: $FLAMINGO;
+  }
+
+  &__continue-letters {
+    display: inline-block;
+    margin-left: -6px;
+  }
+}
+
+.sidebar__menu {
+  width: 23px;
+  height: 18px;
+  display: inline-block;
+  background: $PICTONBLUE url("/img/menu-icon-close.png") center no-repeat;
+  padding: 10px 7px;
+  border-radius: 50%;
+  position: fixed;
+  top: 20px;
+  left: 296px;
+  transition: transform 0.5s;
+
+  &_open {
+    transform: rotate(180deg);
+  }
+}
