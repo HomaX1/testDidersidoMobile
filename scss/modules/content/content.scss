@@ -116,3 +116,17 @@
     }
   }
 }
+
+
+@media (max-width: 1040px) {
+  .main {
+    margin-left: 120px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .main {
+    margin-left: 0;
+  }
+}
+

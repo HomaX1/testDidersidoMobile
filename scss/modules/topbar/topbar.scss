@@ -70,3 +70,16 @@
     outline: none;
   }
 }
+
+
+@media (max-width: 1040px) {
+  .path {
+    margin-left: 160px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .path {
+    margin-left: 25px;
+  }
+}
