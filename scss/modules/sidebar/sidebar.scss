@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 3;
 
   &__menu {
     width: 23px;
@@ -17,11 +17,7 @@
     position: fixed;
     top: 20px;
     left: 296px;
-    transition: transform 0.5s;
-
-    &_open {
-      transform: rotate(180deg);
-    }
+    transition: transform 0.3s;
   }
 
   &__title {
@@ -32,12 +28,56 @@
     color: $WHITE;
     margin: 30px 0 30px 30px;
   }
+
+  &_min-width {
+    .sidebar {
+      &__menu {
+        transform: rotate(180deg);
+        left: 102px;
+      }
+    }
+
+    .logo__continue-letters, .info, .sidebar__title, .navigation-link__text,
+    .fa-angle-right, .navigation-link__message-count {
+      display: none;
+    }
+
+    .logo {
+      display: block;
+      text-align: center;
+      margin-left: 0;
+    }
+
+    .user__photo {
+      margin: 40px auto;
+    }
+
+    .navigation {
+      text-align: center;
+    }
+
+    .navigation-link {
+      padding-left: 0;
+
+      &__icon {
+        margin: 0;
+      }
+
+      &__message-count {
+        display: inline;
+        left: -10px;
+        bottom: 11px;
+      }
+    }
+
+    .fa-weixin {
+      margin-left: 30px;
+    }
+  }
 }
 
 .logo {
   display: inline-block;
-  /*margin-top: 20px;
-  margin-left: 30px;*/
   font-size: 37px;
   font-weight: 400;
   color: $WHITE;
@@ -58,10 +98,9 @@
   display: flex;
   background: #4a868c;
   background: -moz-linear-gradient(top, #4a868c 0%, #55808d 27%, #6a7290 73%, #766b91 100%);
-  background: -webkit-linear-gradient(top, #4a868c 0%,#55808d 27%,#6a7290 73%,#766b91 100%);
-  background: linear-gradient(to bottom, #4a868c 0%,#55808d 27%,#6a7290 73%,#766b91 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a868c', endColorstr='#766b91',GradientType=0 );
-
+  background: -webkit-linear-gradient(top, #4a868c 0%, #55808d 27%, #6a7290 73%, #766b91 100%);
+  background: linear-gradient(to bottom, #4a868c 0%, #55808d 27%, #6a7290 73%, #766b91 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4a868c', endColorstr='#766b91', GradientType=0);
 
   &__photo {
     margin: 40px 20px 40px 30px;
@@ -92,7 +131,7 @@
 .navigation-item {
   cursor: pointer;
 
-  &:last-child .navigation-link__text{
+  &:last-child .navigation-link__text {
     font-weight: 700;
     color: $WHITE;
   }
