@@ -76,6 +76,11 @@
   }
 }
 
+.sidebar-link {
+  display: none;
+}
+
+
 .logo {
   display: inline-block;
   font-size: 37px;
@@ -275,5 +280,48 @@
 @media (max-width: 1023px) {
   .sidebar {
     display: none;
+  }
+
+  .sidebar-link {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+    &__icon {
+      font-size: 24px;
+      color: #fff;
+    }
+  }
+
+  .sidebar_mobile {
+    width: 100%;
+
+    .sidebar {
+      &__menu {
+        display: none;
+      }
+
+      &__title {
+        text-align: center;
+        margin-left: 0;
+      }
+    }
+
+    .sidebar-link {
+      display: inline;
+    }
+
+    .user {
+      justify-content: center;
+
+      &__photo {
+        margin-left: 0;
+      }
+    }
+
+    .navigation {
+      width: 258px;
+      margin: 0 auto;
+    }
   }
 }

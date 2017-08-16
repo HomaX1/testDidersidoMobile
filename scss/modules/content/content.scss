@@ -130,3 +130,33 @@
   }
 }
 
+@media (max-width: 639px) {
+  .main {
+    margin-top: 150px;
+  }
+
+  .order-choose {
+    width: 55%;
+  }
+}
+
+@media (max-width: 35em) {
+  .products__item td {
+    display: flex;
+    align-items: center;
+
+    &:last-child {
+      width: 100%;
+      text-align: left;
+    }
+
+    & b {
+      text-transform: capitalize;
+      width: 80px;
+    }
+  }
+
+  .products__item:first-child {
+    border-bottom: 1px solid $MERCURY;
+  }
+}

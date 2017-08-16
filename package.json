@@ -9,8 +9,5 @@
     "gulp-livereload": "^3.8.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0"
-  },
-  "dependencies": {
-    "jquery": "^3.2.1"
   }
 }

@@ -12,6 +12,7 @@
 
 .path {
   margin-left: 355px;
+  margin-bottom: 4px;
 
   &__item {
     text-transform: capitalize;
@@ -19,10 +20,14 @@
     font-weight: 400;
     color: $WHITE;
 
-    &:first-child {
+    &_weight {
       font-weight: 700;
     }
   }
+}
+
+.path-link {
+  display: none;
 }
 
 .period {
@@ -81,5 +86,37 @@
 @media (max-width: 1023px) {
   .path {
     margin-left: 25px;
+    margin-bottom: 9px;
+
+    &__item {
+      &_weight {
+        margin-left: 25px;
+      }
+    }
+  }
+
+  .path-link {
+    display: inline;
+
+    &__icon {
+      font-size: 24px;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 639px) {
+  .topbar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .path {
+    margin: 20px 0;
+  }
+
+  .period {
+    margin-bottom: 20px;
+    margin-right: 0;
   }
 }

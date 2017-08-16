@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Test for Diversido Mobile</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.mobile.custom.structure.min.css">
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
 
 <header class="topbar">
     <div class="path">
-        <a class="path__item" href="#">Dashboard</a>
+        <a class="path-link" href="#">
+            <i class="path-link__icon fa fa-bars" aria-hidden="true"></i>
+        </a>
+        <a class="path__item path__item_weight" href="#">Dashboard</a>
         <a class="path__item" href="#">/ Home </a>
         <a class="path__item" href="#">/ All Site View</a>
     </div>
@@ -42,7 +46,8 @@
             </div>
         </div>
         <div class="products-wrap">
-            <table class="products">
+            <table class="ui-responsive products" data-role="table">
+                <thead>
                 <tr class="products__item products__item_header">
                     <th>image</th>
                     <th>product name</th>
@@ -53,9 +58,11 @@
                     <th>quantity</th>
                     <th>tracking no#</th>
                 </tr>
+                </thead>
+                <tbody>
                 <tr class="products__item">
                     <td><img src="img/img-1.jpg" alt="#"></td>
-                    <td>your rroduct title here</td>
+                    <td>your product title here</td>
                     <td>3bsd59</td>
                     <td>paid</td>
                     <td>27 sep 2015</td>
@@ -73,6 +80,7 @@
                     <td>2</td>
                     <td>#368qrm83b</td>
                 </tr>
+                </tbody>
             </table>
         </div>
 
@@ -85,6 +93,9 @@
         <span class="logo__continue-letters">ompany</span>
     </a>
     <a class="sidebar__menu" href="#"></a>
+    <a class="sidebar-link" href="#">
+        <i class="sidebar-link__icon fa fa-times" aria-hidden="true"></i>
+    </a>
     <div class="user">
         <img class="user__photo" src="/img/user-photo.png" alt="#">
         <div class="info">
@@ -137,7 +148,8 @@
     </nav>
 </section>
 
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="js/vendor/jquery-2.2.4.min.js"></script>
+<script src="js/vendor/jquery.mobile.custom.min.js"></script>
 <script src="js/script.js"></script>
 
 </body>
